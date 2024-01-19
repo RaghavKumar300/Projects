@@ -85,7 +85,7 @@ body {
 
 .articles-item1 {
   background: #1fa9d7;
-  height: 100px;
+  height: 95pxs;
   width: 300px;
   border-radius: 5px;
   color: white;
@@ -93,7 +93,7 @@ body {
 
 .articles-item2 {
   background: #63c2df;
-  height: 100px;
+  height: 95px;
   width: 300px;
   border-radius: 5px;
   color: white;
@@ -101,7 +101,7 @@ body {
 
 .articles-item3 {
   background: #fec106;
-  height: 100px;
+  height: 95px;
   width: 300px;
   border-radius: 5px;
   color: white;
@@ -109,10 +109,57 @@ body {
 
 .articles-item4 {
   background: #f96c6c;
-  height: 100px;
+  height: 95px;
   width: 300px;
   border-radius: 5px;
   color: white;
+}
+
+.main-body {
+  background: #ffffffff;
+  margin-top: 20px;
+  width: 1120px;
+  border-radius: 5px;
+  height: 200px;
+}
+
+.main-body-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-peragraph {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.main-pera {
+  font-size: 20px;
+}
+
+.main-pera1 {
+  font-size: 10px;
+}
+
+.main-peragraph2 {
+  display: flex;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.main-pera2 {
+  border: 1px solid var(--crl);
+}
+
+.main-pera3 {
+  background: var(--crl);
+  color: black;
+  width: 54px;
+  height: 40px;
+}
+
+.main-pera4 {
+  border: 1px solid var(--crl);
 }
 
 .sidebar {
@@ -267,5 +314,18 @@ body {
 }
 
 .main-icon {
-  padding-left: 215px;
+  padding-left: 150px;
+  padding-top: 5px;
+}
+
+.main-icons {
+  display: flex;
+  align-items: center;
+  background: #1fa9d7;
+  padding: 10px;
+  color: #ffffffff;
+}
+
+.icon {
+  padding-left: 10px;
 }
