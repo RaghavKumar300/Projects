@@ -1,0 +1,217 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+@supports (scrollbar-width: thin) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #c6def9 transparent;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.9em;
+}
+::-webkit-scrollbar-track {
+  background: var(--cui-body-bg, #ffffff);
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border: 0.2em solid var(--cui-body-bg, #ffffff);
+  border-radius: 100vw;
+}
+:-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+:root {
+  --white: #ffffff;
+  --sidebar-bg-color-blue: #3c4b64;
+  --grey-sidebar-text: #e7e9ec;
+  --grey-main-text: #6f7071;
+  --logo-bg-color-blue: #303c54;
+  --dashboard-sidebar-bg-color: #46546c;
+  --new-bg-color-nav: #3399ff;
+  --pro-bg-color-nav: #dd4040;
+  --border-radius-100: 100%;
+  --border-radius-5: 5px;
+  --border-radius-10: 10px;
+  --black: #000000;
+}
+.container {
+  position: relative;
+}
+.sidebar {
+  background-color: var(--sidebar-bg-color-blue);
+  flex: 0 0 225px;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  overflow-y: auto;
+}
+.logo {
+  background-color: var(--logo-bg-color-blue);
+  width: 100%;
+  /* height: 80px; */
+}
+.logo-image {
+  width: 190px;
+}
+.sidebar-content {
+  overflow-y: auto;
+  height: 87vh;
+}
+.dashboad {
+  color: var(--grey-sidebar-text);
+  background-color: var(--dashboard-sidebar-bg-color);
+}
+.new-tag {
+  background-color: var(--new-bg-color-nav);
+  width: 30px;
+  height: 20px;
+  font-size: 10px;
+  border-radius: var(--border-radius-5);
+  color: var(--white);
+}
+.new-tag:hover {
+  background-color: #1881e9;
+}
+.list {
+  background-color: var(--sidebar-bg-color-blue);
+  color: var(--grey-sidebar-text);
+}
+.list:hover {
+  background-color: #69758b;
+}
+.list-icon {
+  color: var(--grey-sidebar-text);
+}
+.list-item {
+  color: var(--grey-sidebar-text);
+}
+.pro-tag {
+  background-color: var(--pro-bg-color-nav);
+  width: 30px;
+  height: 20px;
+  font-size: 10px;
+  border-radius: var(--border-radius-5);
+  color: var(--white);
+  text-align: center;
+}
+.pro-tag:hover {
+  background-color: #d11919;
+}
+.main {
+  width: calc(100% - 238px);
+  position: relative;
+  left: 238px;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.main-content {
+  width: 100%;
+  border-bottom: 1px solid var(--grey-sidebar-text);
+  overflow-y: auto;
+}
+.hamburgur {
+  color: var(--grey-main-text);
+}
+.header-link-content {
+  color: var(--grey-main-text);
+}
+.notification {
+  color: var(--grey-main-text);
+}
+.nav-list-style {
+  width: 100%;
+}
+.navigation-item {
+  color: var(--grey-main-text);
+}
+.subheader {
+  width: 100%;
+}
+.subheader-item {
+  width: 100%;
+  height: 20px;
+}
+.admin-conteiner {
+  height: 100%;
+}
+.home {
+  text-decoration: underline;
+  color: #551a8b;
+}
+.article {
+  background-color: #ebedef;
+  width: 100%;
+  overflow-y: auto;
+  left: calc(100% - 135px);
+  height: calc(100% - 135px);
+}
+.content {
+  flex: 0 0 250px;
+  min-height: 160px;
+  background-color: #46546c;
+  border-radius: var(--border-radius-10);
+}
+.setter {
+  height: 100%;
+}
+.facebook {
+  width: 100%;
+}
+.facebook-content {
+  height: 100%;
+  width: 100%;
+}
+.facebook-icon {
+  color: var(--white);
+}
+.follower {
+  background-color: var(--white);
+  border-bottom-left-radius: var(--border-radius-10);
+  border-bottom-right-radius: var(--border-radius-10);
+}
+.friends {
+  border-right: 1px solid var(--black);
+  width: 50%;
+}
+.feeds {
+  width: 25%;
+}
+body.active .sidebar {
+  margin-left: -235px;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+}
+body.active .main {
+  left: 0px;
+  width: 100vw;
+}
+body.active.navigation .notification {
+  display: none;
+}
+@media (max-width: 576px) {
+  .notification {
+    display: none;
+  }
+  .navigation-item {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (max-width: 992px) {
+  .content {
+    flex: 0 0 100%;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
