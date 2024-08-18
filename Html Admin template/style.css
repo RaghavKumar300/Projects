@@ -1,0 +1,459 @@
+:root {
+  --white: #ffffff !important;
+  --sidebar-bg-color-blue: #3c4b64 !important;
+  --grey-sidebar-text: #e7e9ec !important;
+  --grey-main-text: #6f7071 !important;
+  --logo-bg-color-blue: #303c54 !important;
+  --header-border: #dbdbdb !important;
+  --dashboard-sidebar-bg-color: #46546c !important;
+  --new-bg-color-nav: #3399ff !important;
+  --new-active-color-nav: #1d70c3 !important;
+  --list-active-color: #535b6b !important;
+  --scroll-color1: #444444 !important;
+  --scroll-color2: #c6def9 !important;
+  --scroll-color3: #999999 !important;
+  --list-hover-color: #556177 !important;
+  --new-hover-color-nav: #248af1 !important;
+  --pro-bg-color-nav: #dd4040 !important;
+  --pro-hover-color-nav: #e42b2b !important;
+  --pro-active-color-nav: #c21414 !important;
+  --border-radius-100: 100% !important;
+  --border-radius-5: 5px !important;
+  --border-radius-10: 10px !important;
+  --black: #000000 !important;
+  --content-bg-color1: ;
+  --article-b-color: #ebedef;
+  --cookie-allow-bg-color: #7b57ff;
+  --cookie-allow-active-bg-color: #2a099f;
+  --cookie-allow-hover-bg-color: #4c23e0;
+  --cookie-decline-bg-color: #dadada;
+  --cookie-decline-bg-active-color: #a19c9c;
+  --cookie-decline-hover-bg-color: #cecece;
+  --music-icon-color: #eab308;
+  --star-icon-color: #f0ad4e;
+  --yellow-line-bg-color: #eab308;
+  --grey-line-bg-color: #908e8ee8;
+  --hundred-percent: 100%;
+  --fifty-percent:  50%;
+  --spotify-icon-color: #32cd32;
+  --spotify-box-bg-color: #e9e8e8;
+  --song-container-hover-bg-color: #d4d4d4;
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-purple {
+  background-color: #1d2633;
+}
+
+.bg-blue {
+  background-color: #221e4b;
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px !important;
+  padding: 0px !important;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@supports (scrollbar-width: thin) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-color2) transparent;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.9em;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cui-body-bg, --white);
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-color3);
+  border: 0.2em solid var(--cui-body-bg, --white);
+  border-radius: 100vw;
+}
+
+:-webkit-scrollbar-thumb:hover {
+  background: var(--scorll-color1);
+}
+
+.sidebar {
+  flex: 0 0 225px;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--sidebar-bg-color-blue);
+  height: var(--hundred-percent);
+}
+
+.logo {
+  height: 80px;
+  width: var(--hundred-percent);
+  background-color: var(--logo-bg-color-blue);
+}
+
+.logo-image {
+  width: 200px;
+  height: 200px;
+}
+
+.new {
+  background-color: var(--new-bg-color-nav);
+  border-radius: var(--border-radius-10);
+  color: var(--white);
+  height: 24px;
+  font-size: 10px;
+  width: 39px;
+}
+
+.new-content {
+  font-weight: 700;
+}
+
+.new:hover {
+  background-color: var(--new-hover-color-nav);
+}
+
+.pro {
+  background-color: var(--pro-bg-color-nav);
+  border-radius: var(--border-radius-10);
+  color: var(--white);
+  height: 24px;
+  font-size: 10px;
+  width: 39px;
+}
+
+.pro-content {
+  font-weight: 700;
+}
+
+.pro:hover {
+  background-color: var(--pro-hover-color-nav);
+}
+
+.pro:active {
+  background-color: var(--pro-active-color-nav);
+}
+
+.dashboard a {
+  color: var(--white);
+}
+
+.theme {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.dashboard {
+  background-color: var(--dashboard-sidebar-bg-color);
+  color: var(--grey-sidebar-text);
+}
+
+.list-parent a {
+  color: var(--white);
+}
+
+.list:hover {
+  background-color: var(--list-hover-color);
+}
+
+.list:active {
+  background-color: var(--list-active-color);
+}
+
+.main {
+  width: var(--hundred-percent);
+}
+
+.header {
+  height: 80px;
+  border-bottom: 1px solid var(--header-border);
+}
+
+.header a {
+  color: var(--grey-main-text);
+}
+
+.header-bar {
+  color: var(--grey-main-text);
+}
+
+.subheader {
+  width: var(--hundred-percent);
+  height: 56px;
+  border-bottom: 1px solid var(--header-border);
+  box-shadow: 3.4px 7px 10px var(--header-border);
+}
+
+.subheader a {
+  color: var(--grey-main-text);
+}
+
+.article {
+  background-color: var(--article-b-color);
+  width: var(--hundred-percent);
+  height: calc(var(--hundred-percent) - 136px);
+}
+
+.content {
+  width: 350px;
+  min-height: 220px;
+  border-radius: var(--border-radius-10);
+}
+
+.cookie {
+  font-size: 3rem;
+}
+
+.cookie-icon {
+  color: rgb(139, 139, 139);
+  font-size: 3rem;
+}
+
+.cookie-item {
+  padding-top: 10px !important;
+}
+
+.cookie-text {
+  font-size: 1rem;
+  color: #333;
+  padding: 12px 0px !important;
+  text-align: center;
+}
+
+.cookie-allow {
+  color: var(--white);
+  background-color: var(--cookie-allow-bg-color);
+  border-radius: var(--border-radius-10);
+  padding: 8px 15px !important;
+  width: var(--hundred-percent);
+}
+
+.cookie-allow:hover {
+  background-color: var(--cookie-allow-hover-bg-color);
+}
+
+.cookie-allow:active {
+  background-color: var(--cookie-allow-active-bg-color);
+}
+
+.cookie-decline {
+  width: var(--hundred-percent);
+  color: var(--black);
+  background-color: var(--cookie-decline-bg-color);
+  padding: 8px 15px !important;
+  border-radius: var(--border-radius-10);
+}
+
+.cookie-decline:hover {
+  background-color: var(--cookie-decline-hover-bg-color);
+}
+
+.cookie-decline:active {
+  background-color: var(--cookie-decline-bg-active-color);
+}
+
+.puppy-image {
+  height: 100px;
+  width: 150px;
+  border-radius: var(--border-radius-10);
+}
+
+.puppy-id {
+  height: 100px;
+  width: 150px;
+  border-radius: var(--border-radius-10);
+  color: var(--white);
+}
+
+.puppy-name {
+  height:  var(--fifty-percent);
+  width: var(--hundred-percent);
+}
+
+.puppy-article {
+  height: 60%;
+  border-radius: var(--border-radius-5);
+  background-color: var(--white);
+}
+
+.puppy-article-item {
+  color: var(--black);
+  text-align: center;
+}
+
+.puppy-article h6 {
+  color: var(--cookie-allow-active-bg-color);
+  font-weight: 800;
+}
+
+.puppy-article-content {
+  text-align: center;
+  color: var(--black);
+}
+
+.add-friend {
+  height:  var(--fifty-percent);
+  width: var(--hundred-percent);
+  background-color: var(--cookie-decline-bg-color);
+  border-radius: var(--border-radius-10);
+  color: var(--black);
+}
+
+.add-friend:hover {
+  background-color: var(--cookie-decline-hover-bg-color);
+}
+
+.add-friend:active {
+  background-color: var(--cookie-decline-bg-active-color);
+}
+
+.rating-heading {
+  color: var(--white);
+  text-align: center
+}
+
+.stars {
+  width: var(--hundred-percent);
+  border-bottom: 1px solid var(--white);
+}
+
+.stars .star-icon1:hover {
+  color: var(--star-icon-color);
+}
+
+.stars .star-icon2:hover {
+  color: var(--star-icon-color);
+}
+
+.stars .star-icon3:hover {
+  color: var(--star-icon-color);
+}
+
+.stars .star-icon4:hover {
+  color: var(--star-icon-color);
+}
+
+.stars .star-icon5:hover {
+  color: var(--star-icon-color);
+}
+
+.application {
+  width: var(--hundred-percent);
+  height:  var(--fifty-percent);
+}
+
+.application-icon {
+  color: var(--white);
+}
+
+.application-icon:hover {
+  color: var(--pro-bg-color-nav);
+}
+
+.card div {
+  color: var(--white);
+}
+
+.card-valid {
+  text-align: center;
+}
+
+.music {
+  width: var(--hundred-percent);
+  height: var(--hundred-percent);
+}
+
+.music-icon {
+  color: var(--music-icon-color);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.sub-name {
+  font-weight: 100;
+}
+
+.heart-icon {
+  color: var(--pro-bg-color-nav);
+}
+
+.star-icon {
+  color: var(--star-icon-color);
+}
+
+.speaker {
+  height: var(--fifty-percent);
+}
+
+.grey-line {
+  width: var(--hundred-percent);
+  height: 10px;
+  background-color: var(--grey-line-bg-color);
+  z-index: 888;
+  border-radius: var(--border-radius-5);
+}
+
+.yellow-line {
+  background-color: var(--yellow-line-bg-color);
+  width:  var(--fifty-percent);
+  height: 10px;
+  border-radius: var(--border-radius-5);
+  z-index: 999;
+}
+
+.speaker-icon {
+  color: var(--grey-line-bg-color);
+}
+
+.percent {
+  color: var(--grey-line-bg-color);
+}
+
+.timing {
+  width: var(--hundred-percent);
+  height: var(--hundred-percent);
+}
+
+.spotify-item {
+  font-weight: 900;
+}
+
+.spotify-icon {
+  color: var(--spotify-icon-color);
+}
+
+.song-container {
+  width: 100%;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--border-radius-10);
+  background-color: var(--spotify-box-bg-color);
+}
+
+.tim {
+  font-weight: 100;
+}
+
+.song-container:hover {
+  background-color: var(--song-container-hover-bg-color);
+  border-radius: var(--border-radius-10);
+}
